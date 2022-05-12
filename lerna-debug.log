@@ -1,0 +1,6 @@
+82 error Error: Command failed with exit code 128: git tag v0.1.0 -m v0.1.0
+82 error fatal: tag 'v0.1.0' already exists
+82 error     at makeError (/home/thiagobrolly/Development/Paylivre/zds/design-system-doc/node_modules/execa/lib/error.js:60:11)
+82 error     at handlePromise (/home/thiagobrolly/Development/Paylivre/zds/design-system-doc/node_modules/execa/index.js:118:26)
+82 error     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+82 error     at async Promise.all (index 0)
