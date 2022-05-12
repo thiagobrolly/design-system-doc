@@ -5,7 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
@@ -15,6 +21,8 @@
     "@rollup/plugin-typescript": "^8.3.2",
     "@types/react": "^18.0.9",
     "@types/styled-components": "^5.1.25",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.1",
     "lerna": "^4.0.0",
     "postcss": "^8.4.13",
