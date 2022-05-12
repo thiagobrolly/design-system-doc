@@ -7,6 +7,6 @@ export type ButtonProps = {
 
 export const Button = ({ label }: ButtonProps) => (
   <S.Button>
-    {label} "fix: fix button font size"
+    {label} "BREAKING CHANGE: demo"
   </S.Button>
 );
