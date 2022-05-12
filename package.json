@@ -5,8 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "husky install",
-    "commit": "git-cz"
+    "prepare": "husky install"
   },
   "config": {
     "commitizen": {
@@ -23,7 +22,7 @@
     "@types/styled-components": "^5.1.25",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "lerna": "^4.0.0",
     "postcss": "^8.4.13",
     "react": "^18.1.0",
