@@ -62,7 +62,8 @@
     "@typescript-eslint/no-non-null-assertion": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "no-unused-expressions": "off",
-    "no-nested-ternary": "off"
+    "no-nested-ternary": "off",
+    "react/require-default-props": "off"
   },
   "settings": {
     "import/resolver": {

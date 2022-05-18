@@ -16,5 +16,9 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "styled-components": "^5.0.0"
+  },
+  "dependencies": {
+    "@thiago_brolly/icons": "^0.0.0",
+    "@thiago_brolly/styles": "^0.0.0"
   }
 }

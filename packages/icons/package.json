@@ -1,5 +1,5 @@
 {
-  "name": "@thiago_brolly/styles",
+  "name": "@thiago_brolly/icons",
   "version": "0.0.0",
   "license": "MIT",
   "main": "lib/index.js",
@@ -14,7 +14,6 @@
   },
   "peerDependencies": {
     "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "styled-components": "^5.0.0"
+    "react-dom": "^17.0.0"
   }
 }
