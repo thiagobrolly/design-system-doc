@@ -1,6 +1,6 @@
 {
-  "name": "@thiago_brolly/styles",
-  "version": "0.0.0",
+  "name": "@brollyt/styles",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
