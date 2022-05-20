@@ -89,7 +89,7 @@ export const theme = {
     xmodile: '320px',
     modile: '425px',
     tablet: '768px',
-    desktop: '1024px',
+    desktop: '1170px',
     hd: '1440px',
   },
 
