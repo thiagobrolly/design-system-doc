@@ -1,6 +1,6 @@
 {
-  "name": "@paylivre/icons",
-  "version": "1.0.0",
+  "name": "@brolly-ui/icons",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",

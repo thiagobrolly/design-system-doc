@@ -1,6 +1,6 @@
 {
-  "name": "@paylivre/components",
-  "version": "1.0.0",
+  "name": "@brolly-ui/components",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -18,7 +18,16 @@
     "styled-components": "^5.0.0"
   },
   "dependencies": {
-    "@thiago_brolly/icons": "^0.0.0",
-    "@thiago_brolly/styles": "^0.0.0"
+    "@brolly-ui/icons": "^0.0.0",
+    "@brolly-ui/styles": "^0.0.0",
+    "@radix-ui/react-dialog": "^0.1.7",
+    "@radix-ui/react-dropdown-menu": "^0.1.6",
+    "@radix-ui/react-popover": "^0.1.6",
+    "@radix-ui/react-tooltip": "^0.1.7",
+    "react-focus-lock": "^2.9.0",
+    "react-transition-group": "^4.4.2"
+  },
+  "devDependencies": {
+    "@types/react-transition-group": "^4.4.4"
   }
 }

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { theme } from '@thiago_brolly/styles';
+import { theme } from '@brolly-ui/styles';
 
 import { LogoProps } from '.';
 

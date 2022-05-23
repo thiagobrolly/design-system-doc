@@ -1,5 +1,5 @@
 import { create } from '@storybook/theming';
-import { GlobalStyles, ThemeProvider } from '@thiago_brolly/styles';
+import { GlobalStyles, ThemeProvider } from '@brolly-ui/styles';
 
 const lightTheme = create({
   base: 'light',

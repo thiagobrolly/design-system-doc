@@ -1,8 +1,8 @@
 import React from 'react';
 import * as S from './styles';
 
-export const Main = () => (
+export const Accordion = () => (
   <S.Wrapper>
-    <h1>Main</h1>
+    <h1>Accordion</h1>
   </S.Wrapper>
 );

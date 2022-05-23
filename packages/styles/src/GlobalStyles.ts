@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Open Sans', 'Avenir Next LT Pro Regular', Arial, Helvetica, sans-serif;
+    font-family: ${theme.font.family.primary};
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
 
   button{
     cursor: pointer;
-    font-family: 'Open Sans', 'Avenir Next LT Pro Regular', Arial, Helvetica, sans-serif;
+    font-family: ${theme.font.family.primary};
   }
 
   ::-webkit-scrollbar {
