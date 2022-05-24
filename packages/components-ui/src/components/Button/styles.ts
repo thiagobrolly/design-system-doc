@@ -6,9 +6,10 @@ const buttonModifiers = {
   small: () => css`
     height: 3rem;
     font-size: ${theme.font.size.xsmall};
+    border-radius: ${theme.border.radius.small};
   `,
   medium: () => css`
-    height: 3.5rem;
+    height: 4rem;
     font-size: ${theme.font.size.small};
     padding: ${theme.spacings.xxsmall} ${theme.spacings.xsmall};
   `,
@@ -19,6 +20,12 @@ const buttonModifiers = {
   `,
   fullWidth: () => css`
     width: 100%;
+  `,
+  disabledLink: () => css`
+    pointer-events: none;
+    cursor: not-allowed;
+    color: ${theme.color.white};
+    background: ${theme.color.gray_800};
   `,
 };
 
@@ -36,7 +43,6 @@ const buttonTheme = {
     }
 
     &:disabled {
-      pointer-events: none;
       cursor: not-allowed;
       color: ${theme.color.gray_800};
     }
@@ -54,7 +60,6 @@ const buttonTheme = {
       background: ${theme.color.secondary_100};
     }
     &:disabled {
-      pointer-events: none;
       cursor: not-allowed;
       color: ${theme.color.white};
       background: ${theme.color.gray_800};
@@ -77,7 +82,6 @@ const buttonTheme = {
       border-color: ${theme.color.gray_800};
     }
     &:disabled {
-      pointer-events: none;
       cursor: not-allowed;
       color: ${theme.color.gray_800};
       border-color: ${theme.color.gray_800};
@@ -96,7 +100,6 @@ const buttonTheme = {
       filter: brightness(100%);
     }
     &:disabled {
-      pointer-events: none;
       cursor: not-allowed;
       color: ${theme.color.white};
       background: ${theme.color.gray_800};
@@ -115,7 +118,6 @@ const buttonTheme = {
       filter: brightness(100%);
     }
     &:disabled {
-      pointer-events: none;
       cursor: not-allowed;
       color: ${theme.color.white};
       background: ${theme.color.gray_800};
@@ -133,12 +135,13 @@ export const Button = styled.button<ButtonProps>`
     marginBottom,
     marginLeft,
     marginRight,
-    linkStyle,
+    as,
+    disabled,
   }) => css`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: ${linkStyle ? '0' : theme.spacings.xsmall};
+    padding: ${theme.spacings.xsmall};
     font-weight: ${theme.font.weight.semiBold};
     text-align: center;
     transition: background 0.3s, filter 0.3s;
@@ -152,21 +155,15 @@ export const Button = styled.button<ButtonProps>`
     margin-right: ${marginRight};
     cursor: pointer;
     ${buttonTheme[appearance!]()}
-    ${!linkStyle && buttonModifiers[size!]()}
+    ${buttonModifiers[size!]()}
     ${!!fullWidth && buttonModifiers.fullWidth()}
-
-    > span {
-      width: ${linkStyle && '100%'};
-      min-height: ${linkStyle && '100%'};
-
-      > a {
-        text-decoration: none;
-        color: currentColor;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: ${theme.border.radius.medium};
+    ${!!as && !!disabled && buttonModifiers.disabledLink()}
+    ${!!disabled &&
+    css`
+      span {
+        pointer-events: none;
+        cursor: not-allowed;
       }
-    }
+    `}
   `}
 `;

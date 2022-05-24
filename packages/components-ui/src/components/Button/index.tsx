@@ -34,6 +34,7 @@ export const Button = ({
   marginRight = '',
   linkStyle = false,
   isLoading = false,
+  disabled = false,
   type = 'button',
   ...props
 }: ButtonProps) => (
@@ -44,6 +45,7 @@ export const Button = ({
     appearance={appearance}
     linkStyle={linkStyle}
     isLoading={isLoading}
+    disabled={disabled}
     margin={margin}
     marginTop={marginTop}
     marginBottom={marginBottom}
