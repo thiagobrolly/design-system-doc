@@ -65,7 +65,7 @@ export const TextField = ({
     !!onInput && onInput(newValue);
   };
 
-  const handelete = () => {
+  const handleDelete = () => {
     !!handleClear && handleClear();
     setValue('');
   };
@@ -105,7 +105,7 @@ export const TextField = ({
                   size={16}
                   color="currentColor"
                   className="search-clear"
-                  onClick={handelete}
+                  onClick={handleDelete}
                 />
               )
             ) : inputType === 'password' ? (

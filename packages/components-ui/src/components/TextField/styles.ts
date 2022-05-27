@@ -27,7 +27,6 @@ export const InputWrapper = styled.div`
   display: flex;
   background-color: ${colorInput};
   border-radius: 0.8rem;
-  //padding: 0 ${theme.spacings.xsmall};
   border: 0.2rem solid;
   border-color: ${theme.color.gray_700};
   min-width: 280px;
@@ -65,9 +64,7 @@ export const Input = styled.input<IconPositionProps>`
     padding-right: ${iconPosition === 'right' ? '40px' : '15px'};
 
     transition: all 0.15s linear;
-
     position: absolute;
-
     padding-top: 1.5rem;
 
     // hide eye password Microsoft Edge

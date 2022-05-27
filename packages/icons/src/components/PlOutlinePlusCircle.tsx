@@ -15,6 +15,8 @@ export const PlOutlinePlusCircle = ({
     viewBox="0 0 16.01 16.01"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlinePlusCircle"
     {...props}
   >
     <path

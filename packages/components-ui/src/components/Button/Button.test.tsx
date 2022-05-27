@@ -8,7 +8,7 @@ describe('<Button />', () => {
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       height: '4rem',
-      padding: '0.8rem 3.2rem',
+      padding: '0.8rem 1.6rem',
       'font-size': '1.4rem',
     });
   });
@@ -19,6 +19,7 @@ describe('<Button />', () => {
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       height: '3rem',
       fontSize: '1.2rem',
+      borderRadius: '0.5rem',
     });
   });
 
@@ -27,7 +28,7 @@ describe('<Button />', () => {
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       height: '5rem',
-      padding: '0.8rem 4.8rem',
+      padding: '0.8rem 3.2rem',
       fontSize: '1.6rem',
     });
   });
@@ -40,20 +41,13 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render an version version', () => {
-    render(<Button icon>Click</Button>);
-
-    expect(screen.getByText(/Click/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/icon plus/i)).toBeInTheDocument();
-  });
-
   it('should render the primary appearance by default', () => {
     render(<Button>Click</Button>);
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       background: 'transparent',
       color: '#0f194b',
-      border: 'none',
+      border: 'transparent',
     });
   });
 
@@ -73,7 +67,7 @@ describe('<Button />', () => {
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       background: '#ffffff',
       color: '#0f194b',
-      border: '2px solid #0f194b',
+      border: '0.1rem solid #0f194b',
     });
   });
 
@@ -98,17 +92,36 @@ describe('<Button />', () => {
   });
 
   it('should render Button as a link', () => {
-    const { debug, container } = render(
+    // const { debug, container } = render(
+    //   <Button as="a" href="/link">
+    //     Link
+    //   </Button>,
+    // );
+    // debug(container);
+    render(
       <Button as="a" href="/link">
         Link
       </Button>,
     );
 
-    debug(container);
-
     expect(screen.getByRole('link', { name: /link/i })).toHaveAttribute(
       'href',
       '/link',
     );
+  });
+
+  it('should render Button as a link', () => {
+    render(
+      <Button as="a" href="/link" disabled>
+        Link
+      </Button>,
+    );
+
+    expect(screen.getByRole('link', { name: /link/i })).toHaveStyle({
+      cursor: 'not-allowed',
+      pointerEvents: 'none',
+      background: '#b1b8be',
+      color: '#ffffff',
+    });
   });
 });

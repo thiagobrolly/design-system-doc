@@ -44,13 +44,9 @@ export const Modal = ({
   }, [onRequestClose, shouldCloseOnEscClick, isOpen, scrollBarDisabled]);
 
   return (
-    <S.TransitionModal>
+    <S.ModalRoot className="modal-ui">
       <CSSTransition in={isOpen} timeout={400} unmountOnExit classNames="modal">
-        <S.Modal
-          className="ui-modal"
-          shouldCloseOnEscClick={shouldCloseOnEscClick}
-          isOpen={isOpen}
-        >
+        <S.Modal shouldCloseOnEscClick={shouldCloseOnEscClick} isOpen={isOpen}>
           <S.Overlay
             shouldCloseOnOverlayClick={shouldCloseOnOverlayClick}
             onClick={() =>
@@ -89,6 +85,6 @@ export const Modal = ({
           </S.Content>
         </S.Modal>
       </CSSTransition>
-    </S.TransitionModal>
+    </S.ModalRoot>
   );
 };

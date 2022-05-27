@@ -15,6 +15,8 @@ export const PlOutlineArrowSwap = ({
     viewBox="0 0 15.775 16.794"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineArrowSwap"
     {...props}
   >
     <g data-name="Grupo 3986">

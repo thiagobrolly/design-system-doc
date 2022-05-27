@@ -14,6 +14,8 @@ export const PlOutlinePaperPlane = ({
     viewBox="0 0 16 16.002"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlinePaperPlane"
     {...props}
   >
     <path

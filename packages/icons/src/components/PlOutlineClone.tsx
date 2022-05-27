@@ -15,6 +15,8 @@ export const PlOutlineClone = ({
     viewBox="0 0 13.554 16.002"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineClone"
     {...props}
   >
     <path

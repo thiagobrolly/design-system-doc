@@ -14,6 +14,8 @@ export const Separator = ({
   ...props
 }: SeparatorProps) => (
   <S.Wrapper
+    aria-orientation="horizontal"
+    role="separator"
     color={color}
     marginTop={marginTop}
     marginBottom={marginBottom}

@@ -14,6 +14,8 @@ export const PlOutlineOrder = ({
     viewBox="0 0 15.263 16.556"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineOrder"
     {...props}
   >
     <path

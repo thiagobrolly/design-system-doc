@@ -15,6 +15,8 @@ export const PlOutlineTrash = ({
     viewBox="0 0 15.26 16.786"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineTrash"
     {...props}
   >
     <path

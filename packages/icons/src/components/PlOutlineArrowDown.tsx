@@ -15,6 +15,8 @@ export const PlOutlineArrowDown = ({
     viewBox="0 0 16.102 9.929"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineArrowDown"
     {...props}
   >
     <path
@@ -23,5 +25,3 @@ export const PlOutlineArrowDown = ({
     />
   </svg>
 );
-
-export default PlOutlineArrowDown;

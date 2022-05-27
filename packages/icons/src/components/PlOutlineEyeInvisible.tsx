@@ -14,6 +14,8 @@ export const PlOutlineEyeInvisible = ({
     viewBox="0 0 21.342 21.328"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineEyeInvisible"
     {...props}
   >
     <path

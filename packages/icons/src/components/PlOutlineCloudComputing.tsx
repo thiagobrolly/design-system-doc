@@ -14,6 +14,8 @@ export const PlOutlineCloudComputing = ({
     viewBox="0 0 18.966 14.889"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineCloudComputing"
     {...props}
   >
     <g data-name="Grupo 3154">

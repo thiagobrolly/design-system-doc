@@ -15,6 +15,8 @@ export const PlOutlineCalendar = ({
     viewBox="0 0 14.545 16"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineCalendar"
     {...props}
   >
     <path

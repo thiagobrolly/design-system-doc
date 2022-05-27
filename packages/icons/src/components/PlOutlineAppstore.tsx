@@ -15,6 +15,8 @@ export const PlOutlineAppstore = ({
     viewBox="0 0 16 15.996"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineAppstore"
     {...props}
   >
     <path

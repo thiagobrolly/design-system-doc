@@ -14,6 +14,8 @@ export const PlOutlineCheckCircle = ({
     viewBox="0 0 16.018 16.023"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineCheckCircle"
     {...props}
   >
     <path

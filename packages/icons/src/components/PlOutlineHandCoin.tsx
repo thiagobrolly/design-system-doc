@@ -14,6 +14,8 @@ export const PlOutlineHandCoin = ({
     viewBox="0 0 18.241 16.286"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineHandCoin"
     {...props}
   >
     <g data-name="Grupo 4045">

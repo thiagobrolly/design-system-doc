@@ -15,6 +15,8 @@ export const PlOutlineAlertTriangle = ({
     viewBox="0 0 18.337 16.102"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineAlertTriangle"
     {...props}
   >
     <path

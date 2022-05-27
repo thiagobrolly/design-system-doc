@@ -14,6 +14,8 @@ export const PlOutlineEdit = ({
     viewBox="0 0 16.422 15.7"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineEdit"
     {...props}
   >
     <path

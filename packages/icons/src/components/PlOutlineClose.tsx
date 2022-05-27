@@ -14,6 +14,8 @@ export const PlOutlineClose = ({
     viewBox="0 0 16 16"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineClose"
     {...props}
   >
     <path

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { PlOutlinePlusCircle } from '@brolly-ui/icons';
 import { Popover, PopoverProps } from '.';
@@ -37,7 +36,7 @@ export const Example: Story<PopoverProps> = () => (
   <div
     style={{
       width: '100%',
-      height: '100%',
+      height: '500px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',

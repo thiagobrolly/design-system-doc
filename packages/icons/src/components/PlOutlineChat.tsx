@@ -15,6 +15,8 @@ export const PlOutlineChat = ({
     viewBox="0 0 16.41 16.41"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineChat"
     {...props}
   >
     <g data-name="Grupo 2558">

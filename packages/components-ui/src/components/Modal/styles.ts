@@ -15,6 +15,11 @@ type ModalProps = {
   isOpen: boolean;
 };
 
+export const Content = styled.div<ContentProps>`
+  z-index: ${theme.layers.alwayOnTop};
+  transition: ${theme.transition.default};
+`;
+
 export const Modal = styled.div<ModalProps>`
   position: fixed;
   width: 100%;
@@ -38,11 +43,6 @@ export const Overlay = styled.div<OverlayProps>`
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: ${theme.layers.overlay};
-`;
-
-export const Content = styled.div<ContentProps>`
-  z-index: 99999;
-  transition: ${theme.transition.default};
 `;
 
 export const FocusContainer = styled(FocusLock)`
@@ -82,35 +82,40 @@ export const Close = styled.button`
   }
 `;
 
-export const TransitionModal = styled.div`
+export const ModalRoot = styled.div`
   .modal-enter {
-    opacity: 0.01;
+    opacity: 0;
 
     ${Content} {
-      transform: translateY(-150px);
+      opacity: 0;
+      transform: scale(0);
     }
   }
+
   .modal-enter-active {
     opacity: 1;
 
     ${Content} {
-      transform: translateY(0px);
       opacity: 1;
+      transform: scale(1);
     }
   }
+
   .modal-exit {
     opacity: 1;
 
     ${Content} {
-      transform: scale(1) translateY(0%);
+      opacity: 1;
+      transform: scale(1);
     }
   }
+
   .modal-exit-active {
-    opacity: 0.01;
+    opacity: 0;
 
     ${Content} {
       opacity: 0;
-      transform: translateY(-150px);
+      transform: scale(0);
     }
   }
 `;

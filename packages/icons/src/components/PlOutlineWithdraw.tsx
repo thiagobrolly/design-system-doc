@@ -15,6 +15,8 @@ export const PlOutlineWithdraw = ({
     viewBox="0 0 15.758 16.094"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineWithdraw"
     {...props}
   >
     <path

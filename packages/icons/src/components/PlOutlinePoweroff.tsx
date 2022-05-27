@@ -15,6 +15,8 @@ export const PlOutlinePoweroff = ({
     viewBox="0 0 14.5 16.2"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlinePoweroff"
     {...props}
   >
     <path

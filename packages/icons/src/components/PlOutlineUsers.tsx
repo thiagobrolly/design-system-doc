@@ -15,6 +15,8 @@ export const PlOutlineUsers = ({
     viewBox="0 0 24.494 15.974"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineUsers"
     {...props}
   >
     <g data-name="Grupo 3287">

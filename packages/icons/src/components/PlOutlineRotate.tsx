@@ -15,6 +15,8 @@ export const PlOutlineRotate = ({
     viewBox="0 0 15.396 13.999"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineRotate"
     {...props}
   >
     <path

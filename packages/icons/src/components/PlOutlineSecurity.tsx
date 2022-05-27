@@ -15,6 +15,8 @@ export const PlOutlineSecurity = ({
     viewBox="0 0 13.062 15.965"
     width={size}
     fill={color}
+    role="img"
+    aria-label="PlOutlineSecurity"
     {...props}
   >
     <path
