@@ -67,31 +67,45 @@ describe('<Heading />', () => {
     });
   });
 
-  it('should render a big title when the size is passed', () => {
-    render(<Heading size="big">Title</Heading>);
+  it('should render a xxlarge title when the size is passed', () => {
+    render(<Heading size="xxlarge">Title</Heading>);
     expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
-      fontSize: '3.2rem',
+      fontSize: '3.4rem',
     });
   });
 
-  // it('should render a title with normal font by default', () => {
-  //   render(<Heading>Title</Heading>);
-  //   expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
-  //     fontFamily: 'Avenir Next LT Pro Regular',
-  //   });
-  // });
+  it('should render a big title when the size is passed', () => {
+    render(<Heading size="big">Title</Heading>);
+    expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
+      fontSize: '4.8rem',
+    });
+  });
 
-  // it('should render a bold font title when passed', () => {
-  //   render(<Heading bold>Title</Heading>);
-  //   expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
-  //     fontFamily: theme.font.family.defaultBold,
-  //   });
-  // });
+  it('should render a xbig title when the size is passed', () => {
+    render(<Heading size="xbig">Title</Heading>);
+    expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
+      fontSize: '6.0rem',
+    });
+  });
+
+  it('should render a huge title when the size is passed', () => {
+    render(<Heading size="huge">Title</Heading>);
+    expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
+      fontSize: '9.6rem',
+    });
+  });
 
   it('should render a title with uppercase font when passed', () => {
     render(<Heading uppercase>Title</Heading>);
     expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
       textTransform: 'uppercase',
+    });
+  });
+
+  it('should render a title with bold font when passed', () => {
+    render(<Heading bold>Title</Heading>);
+    expect(screen.getByRole('heading', { name: /title/i })).toHaveStyle({
+      fontWeight: '800',
     });
   });
 });

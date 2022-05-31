@@ -5,12 +5,14 @@ import {
   // AccordionTrigger,
   TextField,
   Card,
+  Separator,
 } from '@brolly-ui/components';
 import { Link } from 'react-router-dom';
 
 const Dashboard: React.FC = () => (
   <div>
     <h1>Dashboard</h1>
+    <Separator color="#f00" />
     <Card
       title="title"
       subTitle="subTitle"
@@ -33,28 +35,28 @@ const Dashboard: React.FC = () => (
         iconPosition="right"
       />
     </Card>
-    <Button size="small" appearance="secondary">
+    <Button size="small" variant="secondary">
       Home
     </Button>
-    <Button size="medium" appearance="secondary">
+    <Button size="medium" variant="secondary">
       Home
     </Button>
-    <Button appearance="approve" as="a" href="#" size="large">
+    <Button variant="approve" as="a" href="#" size="large">
       asLink
     </Button>
-    <Button size="large" appearance="secondary" disabled>
+    <Button size="large" variant="secondary" disabled>
       Home
     </Button>
-    <Button appearance="approve" as="a" href="#" disabled size="large">
+    <Button variant="approve" as="a" href="#" disabled size="large">
       asLink
     </Button>
     <Link to="/">
-      <Button appearance="secondary" disabled margin="1rem" size="large">
+      <Button variant="secondary" disabled margin="1rem" size="large">
         Link
       </Button>
     </Link>
     <Link to="/">
-      <Button appearance="secondary" margin="1rem" size="large">
+      <Button variant="secondary" margin="1rem" size="large">
         Link
       </Button>
     </Link>

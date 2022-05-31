@@ -27,7 +27,7 @@ export const Template: Story<ModalProps> = (args) => {
   return (
     <>
       <Button
-        appearance="secondary"
+        variant="secondary"
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onClick={(isOpen: any) => updateArgs({ isOpen })}
       >

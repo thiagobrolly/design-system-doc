@@ -127,7 +127,7 @@ const buttonTheme = {
 
 export const Button = styled.button<ButtonProps>`
   ${({
-    appearance,
+    variant,
     size,
     fullWidth,
     margin,
@@ -154,7 +154,7 @@ export const Button = styled.button<ButtonProps>`
     margin-left: ${marginLeft};
     margin-right: ${marginRight};
     cursor: pointer;
-    ${buttonTheme[appearance!]()}
+    ${buttonTheme[variant!]()}
     ${buttonModifiers[size!]()}
     ${!!fullWidth && buttonModifiers.fullWidth()}
     ${!!as && !!disabled && buttonModifiers.disabledLink()}

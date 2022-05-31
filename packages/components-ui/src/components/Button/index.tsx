@@ -7,24 +7,23 @@ type ButtonTypes =
   | ButtonHTMLAttributes<HTMLButtonElement>;
 
 export type ButtonProps = {
-  disabled?: boolean;
-  isLoading?: boolean;
-  appearance?: 'primary' | 'secondary' | 'outline' | 'approve' | 'cancel';
+  variant?: 'primary' | 'secondary' | 'outline' | 'approve' | 'cancel';
   size?: 'small' | 'medium' | 'large';
   fullWidth?: boolean;
+  disabled?: boolean;
+  isLoading?: boolean;
   margin?: string;
   marginTop?: string;
   marginBottom?: string;
   marginLeft?: string;
   marginRight?: string;
-  linkStyle?: boolean;
   type?: 'submit' | 'reset' | 'button' | undefined;
   as?: React.ElementType;
 } & ButtonTypes;
 
 export const Button = ({
   children,
-  appearance = 'primary',
+  variant = 'primary',
   fullWidth = false,
   size = 'medium',
   margin = '',
@@ -32,7 +31,6 @@ export const Button = ({
   marginBottom = '',
   marginLeft = '',
   marginRight = '',
-  linkStyle = false,
   isLoading = false,
   disabled = false,
   type = 'button',
@@ -42,8 +40,7 @@ export const Button = ({
     type={type}
     fullWidth={fullWidth}
     size={size}
-    appearance={appearance}
-    linkStyle={linkStyle}
+    variant={variant}
     isLoading={isLoading}
     disabled={disabled}
     margin={margin}

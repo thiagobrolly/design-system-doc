@@ -10,7 +10,7 @@ export default {
     fullWidth: false,
     linkStyle: false,
     children: 'Click',
-    appearance: 'secondary',
+    variant: 'secondary',
     size: 'medium',
     type: 'button',
     margin: '',
@@ -53,19 +53,19 @@ export const All: Story<ButtonProps> = () => (
         justifyContent: 'center',
       }}
     >
-      <Button appearance="primary" margin="1rem">
+      <Button variant="primary" margin="1rem">
         primary
       </Button>
-      <Button appearance="secondary" margin="1rem">
+      <Button variant="secondary" margin="1rem">
         secondary
       </Button>
-      <Button appearance="outline" margin="1rem">
+      <Button variant="outline" margin="1rem">
         outline
       </Button>
-      <Button appearance="approve" margin="1rem">
+      <Button variant="approve" margin="1rem">
         approve
       </Button>
-      <Button appearance="cancel" margin="1rem">
+      <Button variant="cancel" margin="1rem">
         cancel
       </Button>
     </div>
@@ -78,19 +78,19 @@ export const All: Story<ButtonProps> = () => (
         justifyContent: 'center',
       }}
     >
-      <Button appearance="primary" disabled margin="1rem">
+      <Button variant="primary" disabled margin="1rem">
         primary
       </Button>
-      <Button appearance="secondary" disabled margin="1rem">
+      <Button variant="secondary" disabled margin="1rem">
         secondary
       </Button>
-      <Button appearance="outline" disabled margin="1rem">
+      <Button variant="outline" disabled margin="1rem">
         outline
       </Button>
-      <Button appearance="approve" disabled margin="1rem">
+      <Button variant="approve" disabled margin="1rem">
         approve
       </Button>
-      <Button appearance="cancel" disabled margin="1rem">
+      <Button variant="cancel" disabled margin="1rem">
         cancel
       </Button>
     </div>
@@ -102,19 +102,19 @@ export const All: Story<ButtonProps> = () => (
         justifyContent: 'center',
       }}
     >
-      <Button appearance="primary" isLoading margin="1rem">
+      <Button variant="primary" isLoading margin="1rem">
         primary
       </Button>
-      <Button appearance="secondary" isLoading margin="1rem">
+      <Button variant="secondary" isLoading margin="1rem">
         secondary
       </Button>
-      <Button appearance="outline" isLoading margin="1rem">
+      <Button variant="outline" isLoading margin="1rem">
         outline
       </Button>
-      <Button appearance="approve" isLoading margin="1rem">
+      <Button variant="approve" isLoading margin="1rem">
         approve
       </Button>
-      <Button appearance="cancel" isLoading margin="1rem">
+      <Button variant="cancel" isLoading margin="1rem">
         cancel
       </Button>
     </div>
@@ -124,31 +124,31 @@ export const All: Story<ButtonProps> = () => (
 export const Primary: Story<ButtonProps> = (args) => <Button {...args} />;
 Primary.args = {
   children: 'Primary',
-  appearance: 'primary',
+  variant: 'primary',
 };
 
 // export const Secondary: Story<ButtonProps> = (args) => <Button {...args} />;
 // Secondary.args = {
 //   children: 'Secondary',
-//   appearance: 'secondary',
+//   variant: 'secondary',
 // };
 
 // export const Outline: Story<ButtonProps> = (args) => <Button {...args} />;
 // Outline.args = {
 //   children: 'Outline',
-//   appearance: 'outline',
+//   variant: 'outline',
 // };
 
 // export const Approve: Story<ButtonProps> = (args) => <Button {...args} />;
 // Approve.args = {
 //   children: 'Approve',
-//   appearance: 'approve',
+//   variant: 'approve',
 // };
 
 // export const Cancel: Story<ButtonProps> = (args) => <Button {...args} />;
 // Cancel.args = {
 //   children: 'Cancel',
-//   appearance: 'cancel',
+//   variant: 'cancel',
 // };
 
 export const asLink: Story<ButtonProps> = (args) => <Button {...args} />;
@@ -168,6 +168,6 @@ asLink.argTypes = {
 //   </Button>
 // );
 // LinkChildren.args = {
-//   appearance: 'secondary',
+//   variant: 'secondary',
 //   // linkStyle: true,
 // };

@@ -41,7 +41,7 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the primary appearance by default', () => {
+  it('should render the primary variant by default', () => {
     render(<Button>Click</Button>);
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
@@ -51,8 +51,8 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the secondary appearance', () => {
-    render(<Button appearance="secondary">Click</Button>);
+  it('should render the secondary variant', () => {
+    render(<Button variant="secondary">Click</Button>);
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       background: '#0f194b',
@@ -61,8 +61,8 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the outline appearance', () => {
-    render(<Button appearance="outline">Click</Button>);
+  it('should render the outline variant', () => {
+    render(<Button variant="outline">Click</Button>);
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       background: '#ffffff',
@@ -71,8 +71,8 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the approve appearance', () => {
-    render(<Button appearance="approve">Click</Button>);
+  it('should render the approve variant', () => {
+    render(<Button variant="approve">Click</Button>);
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       background: '#48c88f',
@@ -81,8 +81,8 @@ describe('<Button />', () => {
     });
   });
 
-  it('should render the cancel appearance', () => {
-    render(<Button appearance="cancel">Click</Button>);
+  it('should render the cancel variant', () => {
+    render(<Button variant="cancel">Click</Button>);
 
     expect(screen.getByRole('button', { name: /Click/i })).toHaveStyle({
       background: '#fe5454',
