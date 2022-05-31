@@ -7,7 +7,7 @@ const lightTheme = create({
   backgrounds: {
     default: 'light',
   },
-  brandUrl: 'https://web.paylivre.com/static/media/logo-blue.c7100186.png',
+  brandUrl: 'https://www.paylivre.com/',
   brandImage: 'https://web.paylivre.com/static/media/logo-blue.c7100186.png',
 });
 
@@ -17,7 +17,7 @@ const darkTheme = create({
   backgrounds: {
     default: 'dark',
   },
-  brandUrl: 'https://web.paylivre.com/static/media/logo-blue.c7100186.png',
+  brandUrl: 'https://www.paylivre.com/',
   brandImage: 'https://web.paylivre.com/static/media/logo-blue.c7100186.png',
 });
 
