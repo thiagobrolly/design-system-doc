@@ -44,7 +44,7 @@ export const Modal = ({
   }, [onRequestClose, shouldCloseOnEscClick, isOpen, scrollBarDisabled]);
 
   return (
-    <S.ModalRoot className="modal-ui">
+    <S.ModalRoot className="dialog" aria-hidden={!isOpen} aria-label="modal">
       <CSSTransition in={isOpen} timeout={400} unmountOnExit classNames="modal">
         <S.Modal shouldCloseOnEscClick={shouldCloseOnEscClick} isOpen={isOpen}>
           <S.Overlay
@@ -69,7 +69,8 @@ export const Modal = ({
                   <S.Close
                     onClick={() => onRequestClose(false)}
                     data-dismiss="modal"
-                    aria-label="Close"
+                    aria-label="close modal"
+                    role="button"
                   >
                     <PlOutlineClose size={12} color="currentColor" />
                   </S.Close>
