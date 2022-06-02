@@ -1,30 +1,45 @@
-import React from 'react';
-import { Root as TooltipRoot } from '@radix-ui/react-tooltip';
+import { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 import * as S from './styles';
 
-export type TooltipProps = React.ComponentProps<typeof TooltipRoot> & {
+export type TooltipProps = {
   trigger: React.ReactNode;
   children: React.ReactNode;
+  position?: 'right' | 'left';
   className?: string;
-  colorContent?: string;
 };
 
 export const Tooltip = ({
   trigger,
   children,
-  className,
-  colorContent,
-  ...props
+  position = 'left',
+  className = '',
 }: TooltipProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <TooltipRoot delayDuration={500} {...props}>
-      <S.Trigger asChild>
-        <div className={`trigger-tooltip ${className}`}>{trigger}</div>
+    <S.TooltipRoot
+      data-state={isOpen ? 'opened' : 'closed'}
+      isOpen={isOpen}
+      className={className}
+    >
+      <S.Trigger
+        onMouseOut={() => setIsOpen(false)}
+        onMouseOver={() => setIsOpen(true)}
+      >
+        {trigger}
       </S.Trigger>
-      <S.Content sideOffset={5} colorContent={colorContent}>
-        {children}
-        <S.Arrow offset={10} colorContent={colorContent} />
-      </S.Content>
-    </TooltipRoot>
+
+      <CSSTransition
+        in={isOpen}
+        timeout={400}
+        unmountOnExit
+        classNames="tooltip-ui"
+      >
+        <S.Content aria-hidden={!isOpen} position={position}>
+          {children}
+        </S.Content>
+      </CSSTransition>
+    </S.TooltipRoot>
   );
 };

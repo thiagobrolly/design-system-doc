@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { PlOutlineClose } from '@brolly-ui/icons';
+import { PlOutlineClose } from '@paylivre/icons';
 import { CSSTransition } from 'react-transition-group';
 import { Heading } from '../Heading';
 

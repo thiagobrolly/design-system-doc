@@ -26,6 +26,8 @@ export const Spinner = ({
     marginRight={marginRight}
   >
     <svg
+      role="img"
+      aria-label="Spinner"
       width={size}
       height={size}
       viewBox="-3 -3 42 42"

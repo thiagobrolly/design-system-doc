@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 // import userEvent from '@testing-library/user-event';
-// import { PlOutlineUser } from '@brolly-ui/icons';
+// import { PlOutlineUser } from '@paylivre/icons';
 
 import { TextField } from '.';
 

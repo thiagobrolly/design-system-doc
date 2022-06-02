@@ -5,6 +5,6 @@ import { Popover } from '.';
 
 describe('<Popover />', () => {
   it('should render the heading', () => {
-    render(<Popover />);
+    render(<Popover trigger="Click">Content</Popover>);
   });
 });

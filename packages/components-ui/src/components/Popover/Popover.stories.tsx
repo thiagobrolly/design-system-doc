@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
-import { PlOutlinePlusCircle } from '@brolly-ui/icons';
+import { PlOutlinePlusCircle } from '@paylivre/icons';
 import { Popover, PopoverProps } from '.';
 import { Heading } from '../Heading';
 import { TextField } from '../TextField';

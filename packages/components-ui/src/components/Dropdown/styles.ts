@@ -1,4 +1,4 @@
-import { theme } from '@brolly-ui/styles';
+import { theme } from '@paylivre/styles';
 import styled, { css } from 'styled-components';
 
 export const Overlay = styled.div`

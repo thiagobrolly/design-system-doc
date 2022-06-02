@@ -1,11 +1,21 @@
 import React from 'react';
 import * as S from './styles';
 
+// export type AccordionProps = Pick<AccordionImplSingleProps, 'collapsible'> & {
+//   children: React.ReactNode;
+//   type?: 'single' | 'multiple';
+//   disabled?: boolean;
+//   width?: string;
+//   className?: string;
+//   collapsible?: string;
+// };
+
 export type AccordionProps = {
   children: React.ReactNode;
-  type: 'single' | 'multiple';
+  type?: 'single' | 'multiple';
   disabled?: boolean;
   width?: string;
+  className?: string;
 };
 
 export type AccordionItemProps = {
@@ -25,7 +35,7 @@ type ContentProps = {
 export const AccordionTrigger = ({ children }: TriggerProps) => (
   <S.AccordionHeader>
     <S.AccordionTrigger>
-      <span>{children}</span>
+      {children}
       <S.ChevronDownIcon size={14} />
     </S.AccordionTrigger>
   </S.AccordionHeader>
@@ -52,14 +62,14 @@ export const Accordion = ({
   type = 'single',
   disabled = false,
   width,
-  ...props
+  className,
 }: AccordionProps) => (
   <S.AccordionWrapper
     disabled={disabled}
-    width={width}
     collapsible
+    width={width}
     type={type}
-    {...props}
+    className={className}
   >
     {children}
   </S.AccordionWrapper>

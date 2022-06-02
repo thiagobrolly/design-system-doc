@@ -5,7 +5,7 @@ import {
   PlOutlineEye,
   PlOutlineEyeInvisible,
   PlOutlineClose,
-} from '@brolly-ui/icons';
+} from '@paylivre/icons';
 import * as S from './styles';
 
 export type TextFieldProps = {

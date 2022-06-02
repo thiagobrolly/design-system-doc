@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { theme } from '@brolly-ui/styles';
+import { theme } from '@paylivre/styles';
 import { CardProps } from '.';
 
 const cardModifiers = {

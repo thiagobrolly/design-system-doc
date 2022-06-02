@@ -12,7 +12,8 @@ import {
   AccordionTrigger,
   AccordionContent,
   Modal,
-} from '@brolly-ui/components';
+  Tooltip,
+} from '@paylivre/components';
 import { Link } from 'react-router-dom';
 
 const Dashboard: React.FC = () => {
@@ -20,6 +21,24 @@ const Dashboard: React.FC = () => {
   return (
     <div>
       <h1>Dashboard</h1>
+      <Tooltip
+        trigger={
+          <span
+            style={{
+              background: '#f00',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: 24,
+              boxShadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)',
+            }}
+          >
+            <h1 aria-label="toogle Tooltip">Click here</h1>
+          </span>
+        }
+      >
+        Warning
+      </Tooltip>
       <button type="button">Open Modal</button>
       <Button variant="secondary" onClick={() => setHandleOpen(true)}>
         Abrir Modal

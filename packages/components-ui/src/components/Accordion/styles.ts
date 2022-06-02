@@ -6,8 +6,8 @@ import {
   Trigger,
   Content,
 } from '@radix-ui/react-accordion';
-import { theme } from '@brolly-ui/styles';
-import { PlOutlineArrowDown } from '@brolly-ui/icons';
+import { theme } from '@paylivre/styles';
+import { PlOutlineArrowDown } from '@paylivre/icons';
 import { AccordionProps } from '.';
 
 const open = keyframes`

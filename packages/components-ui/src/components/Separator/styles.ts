@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from '@brolly-ui/styles';
+import { theme } from '@paylivre/styles';
 import { SeparatorProps } from '.';
 
 export const Wrapper = styled.div<SeparatorProps>`

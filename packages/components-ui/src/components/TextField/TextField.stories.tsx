@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { PlOutlineLock } from '@brolly-ui/icons';
+import { PlOutlineLock } from '@paylivre/icons';
 import { TextField, TextFieldProps } from '.';
 
 export default {

@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import {
   PlOutlinePlusCircle,
   SVGRProps,
-} from '@brolly-ui/icons/src/components/PlOutlinePlusCircle';
+} from '@paylivre/icons/src/components/PlOutlinePlusCircle';
 
 export default {
   title: 'Components/Icons',

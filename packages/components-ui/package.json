@@ -1,5 +1,5 @@
 {
-  "name": "@brolly-ui/components",
+  "name": "@paylivre/components",
   "version": "0.0.0",
   "license": "MIT",
   "main": "lib/index.js",
@@ -18,13 +18,10 @@
     "styled-components": "^5.0.0"
   },
   "dependencies": {
-    "@brolly-ui/icons": "^0.0.0",
-    "@brolly-ui/styles": "^0.0.0",
+    "@paylivre/icons": "^0.0.0",
+    "@paylivre/styles": "^0.0.0",
     "@radix-ui/react-accordion": "^0.1.6",
-    "@radix-ui/react-dialog": "^0.1.7",
-    "@radix-ui/react-dropdown-menu": "^0.1.6",
     "@radix-ui/react-popover": "^0.1.6",
-    "@radix-ui/react-tooltip": "^0.1.7",
     "react-focus-lock": "^2.9.0",
     "react-transition-group": "^4.4.2"
   },
